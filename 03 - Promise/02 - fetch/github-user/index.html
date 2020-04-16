@@ -8,7 +8,86 @@
     <title>Github User Search</title>
   </head>
   <body>
-    // Your code goes here
+    <!-- Header Section -->
+   <header class ="header">
+      <div class="container header-flex">
+        <div>
+          <div class="flex">
+            <i class="fab fa-github"></i>
+            <h1 class="main-heading">Github User Search</h1>  
+          </div>
+          <div>
+            <p class="tag-line">Browse users and their profiles via the Github API</p>  
+          </div>
+        </div>    
+        <div class="flex search-sec">
+          <input class="search-box" type="text" placeholder="Search for a user. e.g dasjideepak">
+          <i class="search-icon fas fa-search"></i>
+        </div>
+      </div>  
+   </header>
+   <!-- Main Section -->
+   <main>
+     <!-- Profile Section -->
+      <section class="container profile-sec flex">
+        <div>
+          <img class="user-img" src="https://avatars1.githubusercontent.com/u/38307844?s=400&u=a8a139aceda8c6951b2db369fc5431b593c276d2&v=4" alt="User Image">
+        </div>
+        <div class="user-info">
+          <div class="flex">
+            <h2 class="profile-name">Deepak Sharma</h2>
+            <h3 class="user-name">@dasjideepak</h3>
+          </div>
+          <div class="flex">
+            <h3 class="user-bio">Learning Web Development @AltCampus, Engineer, Freelancer, Youtuber</h3>
+          </div>
+          <div class="flex">
+            <i class="fas icon fa-user-friends"></i>
+            <h4 class="user-org">AltCampus</h4>
+          </div>
+          <div class="flex">
+            <i class="fas icon fa-map-marker-alt"></i>
+            <h4 class="user-location">Dharamshala, Himachal Pradesh</h4>
+          </div>
+          <div class="flex">
+            <i class="fas icon fa-link"></i>
+            <h4 class="user-website">https://helpingdeepak.com/</h4>
+          </div>
+          <div class="num-flex">
+            <div>
+              <h6 class="user-followers">20</h6>
+              <kbd>Followers</kbd>
+            </div>
+            <div>
+              <h6 class="user-followings">40</h6>
+              <kbd>Following</kbd>
+            </div>
+            <div>
+              <h6 class="user-repo">36</h6>
+              <kbd>Repos</kbd>  
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="container grid">
+        <!-- Repositories Section -->
+        <div class="repo-sec">
+          <h2 class="repo-heading">Repositiories</h2>
+          <div class="repo-list"></div>
+        </div>
+        <!-- Follower Section -->
+        <div class="follower-sec">
+          <h2 class="follower-heading">Followers</h2>
+          <div class="follower-list"></div>
+        </div>
+      </section>
+   </main>
+   <footer>
+     <div class="container">
+        <p>Designed by Deepak</p>
+     </div>
+   </footer>
     <script src="./main.js"></script>
   </body>
 </html>
+<script src="https://kit.fontawesome.com/f4ce9ea80b.js" crossorigin="anonymous"></script>   

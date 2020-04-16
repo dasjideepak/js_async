@@ -1,0 +1,248 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/***** My CSS *****/
+
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 16px 0;
+    /* border: 1px solid black; */
+}
+
+.flex {
+    display: flex;
+}
+
+.header {
+    background-color: rgb(230, 220, 220);
+    border-bottom: 4px solid rgb(155, 152, 152);
+}
+
+.header-flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.fab {
+    font-size: 28px;
+}
+
+main, footer {
+    display: none;
+}
+
+.main-heading {
+    font-size: 28px;
+    font-weight: 400;
+    padding-left: 10px;
+    font-weight: 600;
+}
+
+.tag-line {
+    padding-top: 4px;
+}
+
+.search-sec {
+    margin-right: 18px;
+    height: 36px;
+}
+
+.search-box {
+    width: 350px;
+    padding: 8px;
+    border: 2px solid rgb(114, 111, 111);
+    font-size: 16px;
+    border-right: 0;
+}
+
+.search-icon {
+    font-size: 20px;
+    background-color: white;
+    padding: 6px 12px;
+    border: 2px solid rgb(114, 111, 111);
+    border-left: 0;
+}
+
+.search-icon:hover {
+    color: rgb(6, 173, 0);
+}
+
+.user-img {
+    width: 220px;
+}
+
+.user-info {
+    /* border: 1px solid black; */
+    padding-left: 24px;
+}
+
+.profile-name {
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.user-name {
+    font-size: 20px;
+    color: green;
+    padding-left: 8px;
+    padding-top: 8px;
+}
+
+.user-bio, .user-org, .user-location, .user-website {
+    font-size: 20px;
+}
+
+.icon {
+    font-size: 18px;
+    width: 16px;
+    text-align: center;
+    padding-right: 30px;
+}
+
+.num-flex {
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    /* border: 1px solid black; */
+    width: 320px;
+}
+
+.user-info .flex {
+    padding: 4px 0;
+}
+
+.num-flex h6 {
+    font-size: 28px;
+    font-weight: 600;
+    text-align: center;
+}
+
+kbd {
+    font-size: 22px;    
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    grid-column-gap: 80px;
+}
+
+.single-repo {
+    border-bottom: 2px solid rgb(224, 222, 216);
+    padding: 16px 0;
+}
+
+.repo-heading, .follower-heading {
+    font-size: 28px;
+    padding-bottom: 20px;
+    font-weight: 600;
+}
+
+.repo-title {
+    font-size: 22px;
+    color: blue;
+    font-weight: 600;
+}
+
+.repo-title span {
+    padding-left: 4px;
+    color: rgb(59, 53, 53);
+}
+
+.repo-des {
+    font-size: 18px;
+    padding-top: 8px;
+}
+
+.repo-icons {
+    padding-top: 20px;
+    justify-content: space-between;
+}
+
+.ic {
+    padding-right: 4px;
+    text-align: center;
+    padding-top: 2px;
+}
+
+.fork-icon {
+    padding-left: 24px;  
+}
+
+
+.single-follower {
+    border-bottom: 2px solid rgb(224, 222, 216);
+    padding: 12px 0;
+}
+
+.follower-img {
+    width: 80px;
+    border-radius: 12px;
+}
+
+.follower-username {
+    font-size: 20px;
+    padding-left: 24px;
+} 
+
+footer {
+    background-color: rgb(230, 220, 220);
+    border-top: 4px solid rgb(155, 152, 152);
+    text-align: center;
+}
+
+footer p {
+    font-size: 18px;
+    font-weight: 600;
+}
