@@ -10,7 +10,7 @@ setTimeout(sayHello, 1000);
 console.log("Hey You!");
 ```
 
- output
+ output - "Hey You!" and after 1 sec "Hey You Called Me"
 
 2.
 ```js
@@ -22,7 +22,7 @@ setTimeout(sayHello, 0);
 
 console.log("Hey You!");
 ```
- output
+ output - "Hey You!" and after that "Hey You Called Me"
 
 3.
 ```js
@@ -35,7 +35,7 @@ function main() {
 }
 main();
 ```
- output
+ output - first A, then C, after that B
 
 4.
 ```js
@@ -55,28 +55,31 @@ function main() {
   console.log("C");
 }
 
- output
+main();
+
+```
+ output - A, C and B
 
 5. Look at the output of the code below to understand hwo things are happening.
 
 ```js
-function runWhileLoopForNSeconds(sec) {
-  let start = Date.now(),
-    now = start;
-  while (now - start < sec * 1000) {
-    now = Date.now();
+  function runWhileLoopForNSeconds(sec) {
+    let start = Date.now(),
+      now = start;
+    while (now - start < sec * 1000) {
+      now = Date.now();
+    }
   }
-}
-function main() {
-  var current = Date.now();
-  console.log("A", Date.now() - current);
-  setTimeout(function exec() {
-    console.log("B", Date.now() - current);
-  }, 1000);
-  runWhileLoopForNSeconds(3);
-  console.log("C", Date.now() - current);
-}
+  function main() {
+    var current = Date.now();
+    console.log("A", Date.now() - current);
+    setTimeout(function exec() {
+      console.log("B", Date.now() - current);
+    }, 1000);
+    runWhileLoopForNSeconds(3);
+    console.log("C", Date.now() - current);
+  }
 
-main();
+  main();
 
 ```
